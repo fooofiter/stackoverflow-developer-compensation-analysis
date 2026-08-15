@@ -62,6 +62,9 @@ data/raw/schema.csv
 │   └── developer_compensation_blog_post.md
 ├── data/
 │   └── README.md
+├── docs/
+│   ├── assets/
+│   └── index.html
 ├── notebooks/
 │   └── stackoverflow_developer_compensation.ipynb
 ├── reports/
