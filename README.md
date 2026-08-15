@@ -4,6 +4,9 @@ This Udacity Data Scientist Nanodegree project analyzes the 2025 Stack Overflow
 Developer Survey to understand compensation differences and test how well
 public survey attributes can predict annual pay.
 
+Read the accompanying public article:
+[What Really Predicts Developer Pay?](https://fooofiter.github.io/stackoverflow-developer-compensation-analysis/)
+
 ## Business questions
 
 1. How does annual compensation vary across experience levels, countries, and

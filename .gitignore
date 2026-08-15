@@ -12,9 +12,11 @@ __pycache__/
 data/raw/*.csv
 
 # Generated temporary files
+tmp/
 *.tmp
 *.log
 *.part
+*.pdf
 
 # Internal decision-gate and submission records remain local
 GATE*_*.md

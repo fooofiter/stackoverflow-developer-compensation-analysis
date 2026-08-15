@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An analysis of developer compensation using the 2025 Stack Overflow Developer Survey.">
+  <meta name="author" content="fooofiter">
+  <meta property="og:title" content="What Really Predicts Developer Pay?">
+  <meta property="og:description" content="Country and experience beat individual technologies in a global analysis of 19,025 professional developers.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://fooofiter.github.io/stackoverflow-developer-compensation-analysis/">
+  <meta property="og:image" content="https://fooofiter.github.io/stackoverflow-developer-compensation-analysis/assets/compensation_by_country_and_role.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://fooofiter.github.io/stackoverflow-developer-compensation-analysis/">
+  <title>What Really Predicts Developer Pay?</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #53606d;
+      --paper: #fffdf8;
+      --surface: #ffffff;
+      --blue: #176b87;
+      --blue-dark: #104f65;
+      --orange: #d9712b;
+      --line: #dce4e7;
+      --shadow: 0 18px 50px rgba(25, 55, 65, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(217, 113, 43, 0.11), transparent 30rem),
+        linear-gradient(180deg, #f5fbfc 0, var(--paper) 34rem);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--blue-dark);
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover {
+      color: var(--orange);
+    }
+
+    .page-shell {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .site-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      font-family: Inter, "Segoe UI", sans-serif;
+      font-size: 0.88rem;
+    }
+
+    .site-nav .brand {
+      color: var(--ink);
+      font-weight: 750;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+
+    .site-nav .repo-link {
+      border: 1px solid rgba(23, 107, 135, 0.35);
+      border-radius: 999px;
+      padding: 7px 14px;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 72px 0 54px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--blue-dark);
+      font-family: Inter, "Segoe UI", sans-serif;
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: clamp(2.55rem, 6vw, 5.1rem);
+      font-weight: 560;
+      letter-spacing: -0.045em;
+      line-height: 1.02;
+    }
+
+    .deck {
+      max-width: 760px;
+      margin: 28px auto 0;
+      color: var(--muted);
+      font-family: Inter, "Segoe UI", sans-serif;
+      font-size: clamp(1.05rem, 2vw, 1.28rem);
+      line-height: 1.55;
+    }
+
+    .byline {
+      margin-top: 24px;
+      color: var(--muted);
+      font-family: Inter, "Segoe UI", sans-serif;
+      font-size: 0.85rem;
+    }
+
+    main {
+      padding-bottom: 80px;
+    }
+
+    article {
+      width: min(760px, 100%);
+      margin: 0 auto;
+    }
+
+    article > p:first-child::first-letter {
+      float: left;
+      margin: 0.08em 0.08em 0 0;
+      color: var(--blue-dark);
+      font-size: 4.1rem;
+      font-weight: 650;
+      line-height: 0.82;
+    }
+
+    h2 {
+      margin: 2.5em 0 0.55em;
+      font-family: Inter, "Segoe UI", sans-serif;
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+    }
+
+    figure {
+      width: min(1080px, calc(100vw - 32px));
+      margin: 48px 50%;
+      transform: translateX(-50%);
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .image-link {
+      display: block;
+      cursor: zoom-in;
+    }
+
+    figcaption {
+      max-width: 800px;
+      margin: 13px auto 0;
+      color: var(--muted);
+      font-family: Inter, "Segoe UI", sans-serif;
+      font-size: 0.78rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .callout {
+      margin: 2.2em 0;
+      padding: 1.25em 1.35em;
+      border-left: 4px solid var(--orange);
+      border-radius: 0 12px 12px 0;
+      background: rgba(217, 113, 43, 0.08);
+    }
+
+    .conclusion {
+      margin-top: 2.2em;
+      font-size: 1.2rem;
+    }
+
+    .project-link {
+      margin-top: 48px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      font-family: Inter, "Segoe UI", sans-serif;
+    }
+
+    .project-link strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+
+    .project-link p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0 42px;
+      color: var(--muted);
+      font-family: Inter, "Segoe UI", sans-serif;
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        font-size: 17px;
+      }
+
+      header {
+        padding: 44px 0 36px;
+      }
+
+      .site-nav {
+        padding-top: 18px;
+      }
+
+      figure {
+        margin-top: 36px;
+        margin-bottom: 36px;
+      }
+
+      .project-link {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="./">fooofiter / data notes</a>
+      <a class="repo-link" href="https://github.com/fooofiter/stackoverflow-developer-compensation-analysis">View the analysis on GitHub</a>
+    </nav>
+
+    <header>
+      <p class="eyebrow">Developer careers · Data science</p>
+      <h1>What Really Predicts Developer Pay?</h1>
+      <p class="deck">Country and experience beat individual technologies in a global analysis of 19,025 professional developers.</p>
+      <p class="byline">By fooofiter · August 2026 · 4 min read</p>
+    </header>
+
+    <main>
+      <article>
+        <p>Developer compensation discussions often focus on the newest language or framework. But does an individual technology really tell us much about pay? I analyzed the 2025 Stack Overflow Developer Survey to find out.</p>
+
+        <p>I focused on 19,025 professional developers who were employed or self-employed and reported annual compensation between USD 1,000 and USD 1 million. The sample is global, so the results describe survey respondents—not every developer or a universal salary market.</p>
+
+        <figure>
+          <a class="image-link" href="assets/compensation_by_country_and_role.png" aria-label="Open the country and role compensation chart at full size">
+            <img src="assets/compensation_by_country_and_role.png" alt="Two horizontal bar charts compare median annual developer compensation across 15 countries and 12 developer roles." decoding="async">
+          </a>
+          <figcaption>Median annual compensation by country and developer role. Source: 2025 Stack Overflow Developer Survey.</figcaption>
+        </figure>
+
+        <h2>Experience matters, but location changes the scale</h2>
+
+        <p>Median compensation rose steadily with professional experience: from USD 30,764 at 0–2 years to USD 75,410 at 6–10 years and USD 117,082 at 31 or more years. Geography produced even larger gaps. Among the 15 countries with the most usable responses, medians ranged from USD 19,761 in India to USD 151,000 in the United States. Engineering managers had the highest median among the 12 most common roles at USD 135,000.</p>
+
+        <figure>
+          <a class="image-link" href="assets/compensation_by_experience.png" aria-label="Open the experience compensation chart at full size">
+            <img src="assets/compensation_by_experience.png" alt="A line chart shows median annual compensation rising as professional work experience increases." loading="lazy" decoding="async">
+          </a>
+          <figcaption>Median annual compensation rises with professional coding experience. Source: 2025 Stack Overflow Developer Survey.</figcaption>
+        </figure>
+
+        <p>These comparisons are descriptive. They do not adjust for purchasing power, industry mix, or local costs of living.</p>
+
+        <h2>Technologies are signals, not magic salary buttons</h2>
+
+        <p>A statistical model estimated technology associations while accounting for observed differences in career and workplace context. Swift, ClickHouse, Homebrew, and Phoenix had some of the largest positive coefficients. Laravel, IBM DB2, Django, and Dart appeared at the negative end.</p>
+
+        <div class="callout">
+          That does <strong>not</strong> mean learning Swift causes an 11.8% raise or using Laravel cuts pay by 10.4%. Technologies travel with industries, locations, specialties, and seniority that a survey cannot measure perfectly.
+        </div>
+
+        <h2>Salary is predictable—only up to a point</h2>
+
+        <p>As a baseline, simply predicting the training-set median produced a typical error factor of 2.09. To check that the result did not depend on one algorithm, I tested two nonlinear approaches: Extra Trees averages many randomized trees, while gradient boosting builds trees sequentially to correct earlier mistakes. I also included linear Ridge regression, and evaluated all three model families using the same five-fold validation process.</p>
+
+        <p>Gradient boosting performed best. On held-out responses, its log MAE was 0.422, which corresponds to a typical error factor of about 1.53. Its log-scale R² was 0.564.</p>
+
+        <p>Permutation importance reinforced the descriptive story: country and experience mattered far more than any single technology.</p>
+
+        <p>For three hypothetical US software-industry profiles, the model predicted approximately USD 102,000 for an early-career full-stack developer, USD 195,000 for an experienced back-end contributor, and USD 214,000 for an experienced engineering manager. These are illustrations of model behavior—not salary quotes or causal promotion effects.</p>
+
+        <p class="conclusion">The clearest lesson is that developer compensation reflects context and career stage more than one tool on a résumé. Technology matters, but it is only one piece of a much larger labor-market story.</p>
+
+        <figure>
+          <a class="image-link" href="assets/model_feature_importance.png" aria-label="Open the model feature importance chart at full size">
+            <img src="assets/model_feature_importance.png" alt="A permutation importance chart ranks country and professional experience above individual technologies for predicting compensation." loading="lazy" decoding="async">
+          </a>
+          <figcaption>Permutation importance of the selected compensation model. Country and experience dominate individual technologies.</figcaption>
+        </figure>
+
+        <div class="project-link">
+          <strong>Explore the complete project</strong>
+          <p>Read the reproducible notebook, model comparisons, and supporting results in the <a href="https://github.com/fooofiter/stackoverflow-developer-compensation-analysis">GitHub repository</a>.</p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      Analysis by fooofiter · Data from the 2025 Stack Overflow Developer Survey
+    </footer>
+  </div>
+</body>
+</html>
