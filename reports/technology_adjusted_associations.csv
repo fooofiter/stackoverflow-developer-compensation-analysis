@@ -1,0 +1,129 @@
+feature,coefficient_log,approximate_percent_difference,technology_family,technology
+LanguageHaveWorkedWith__Swift,0.11169041225361334,11.816663636537616,Language,Swift
+DatabaseHaveWorkedWith__Clickhouse,0.0966003776092163,10.142013351495493,Database,Clickhouse
+PlatformHaveWorkedWith__Homebrew,0.08242549051604227,8.591775925279443,Platform,Homebrew
+WebframeHaveWorkedWith__Phoenix,0.07509806317164157,7.798985680597381,Webframe,Phoenix
+DatabaseHaveWorkedWith__Elasticsearch,0.06941029259023886,7.187590168099933,Database,Elasticsearch
+DatabaseHaveWorkedWith__Neo4J,0.0642908097649868,6.640247392570076,Database,Neo4J
+LanguageHaveWorkedWith__TypeScript,0.06359712484001685,6.5662983122052765,Language,TypeScript
+DatabaseHaveWorkedWith__Databricks SQL,0.059632815173703474,6.144672784959582,Database,Databricks SQL
+WebframeHaveWorkedWith__AngularJS,0.05850900207552346,6.025453014299176,Webframe,AngularJS
+PlatformHaveWorkedWith__Terraform,0.05729681740981942,5.897008450973895,Platform,Terraform
+LanguageHaveWorkedWith__C++,0.05686510656806196,5.851301431133815,Language,C++
+PlatformHaveWorkedWith__Kubernetes,0.05307478227618984,5.450850071676383,Platform,Kubernetes
+PlatformHaveWorkedWith__Ninja,0.052102959515533405,5.348420315292013,Platform,Ninja
+PlatformHaveWorkedWith__Amazon Web Services (AWS),0.04830038076694611,4.948585334791633,Platform,Amazon Web Services (AWS)
+DatabaseHaveWorkedWith__Redis,0.04718173207020617,4.831250377116736,Database,Redis
+WebframeHaveWorkedWith__Deno,0.04703794234067275,4.816177803644961,Webframe,Deno
+LanguageHaveWorkedWith__Rust,0.04479314885157567,4.581151022147312,Language,Rust
+LanguageHaveWorkedWith__Go,0.04439971816474338,4.540013680947785,Language,Go
+LanguageHaveWorkedWith__Bash/Shell (all shells),0.042251115417216475,4.315639851757691,Language,Bash/Shell (all shells)
+LanguageHaveWorkedWith__Scala,0.041583723632069504,4.246043677199118,Language,Scala
+PlatformHaveWorkedWith__Datadog,0.04081900029473048,4.166354768641467,Platform,Datadog
+DatabaseHaveWorkedWith__Dynamodb,0.04049059594846292,4.1321517015259435,Database,Dynamodb
+PlatformHaveWorkedWith__Prometheus,0.040393143374505475,4.122004249766564,Platform,Prometheus
+WebframeHaveWorkedWith__Axum,0.037944947608105586,3.867404981363909,Webframe,Axum
+DatabaseHaveWorkedWith__Cosmos DB,0.03640226580002806,3.7072941570284623,Database,Cosmos DB
+PlatformHaveWorkedWith__pnpm,0.036266364201082514,3.693201127584511,Platform,pnpm
+PlatformHaveWorkedWith__Poetry,0.03412222878529154,3.4711070476477257,Platform,Poetry
+LanguageHaveWorkedWith__Lisp,0.031323599526312924,3.1819346119660086,Language,Lisp
+LanguageHaveWorkedWith__Kotlin,0.031109001999142953,3.1597943996520383,Language,Kotlin
+WebframeHaveWorkedWith__Fastify,0.026006560884574967,2.6347682200029254,Webframe,Fastify
+PlatformHaveWorkedWith__Google Cloud,0.0250277691866586,2.5343593086722738,Platform,Google Cloud
+LanguageHaveWorkedWith__Python,0.02280251197903567,2.306447661656419,Language,Python
+PlatformHaveWorkedWith__Yarn,0.02249111868027827,2.2745950790326708,Platform,Yarn
+LanguageHaveWorkedWith__Ruby,0.02219144266697282,2.243950428079722,Language,Ruby
+DatabaseHaveWorkedWith__DuckDB,0.021920094327837137,2.216210465710944,Database,DuckDB
+WebframeHaveWorkedWith__ASP.NET,0.017314323663294322,1.746508542097791,Webframe,ASP.NET
+PlatformHaveWorkedWith__Webpack,0.015587979593614052,1.571010588976618,Platform,Webpack
+LanguageHaveWorkedWith__Groovy,0.015129864108539797,1.524489992907485,Language,Groovy
+WebframeHaveWorkedWith__Vue.js,0.014134196052112597,1.4234556079780747,Webframe,Vue.js
+PlatformHaveWorkedWith__Cargo,0.013392768232795903,1.3482853065789113,Platform,Cargo
+LanguageHaveWorkedWith__VBA,0.012421945625767815,1.2499418447717847,Language,VBA
+PlatformHaveWorkedWith__Ansible,0.012001288437885844,1.2073592859197957,Platform,Ansible
+PlatformHaveWorkedWith__Docker,0.01197994003949487,1.2051986939563442,Platform,Docker
+DatabaseHaveWorkedWith__InfluxDB,0.011919831187865477,1.1991155485111982,Database,InfluxDB
+PlatformHaveWorkedWith__New Relic,0.011108019942732583,1.116994306495367,Platform,New Relic
+WebframeHaveWorkedWith__Ruby on Rails,0.010696173436318537,1.0753582000821327,Webframe,Ruby on Rails
+PlatformHaveWorkedWith__Cloudflare,0.010518914097649634,1.0574432367760567,Platform,Cloudflare
+WebframeHaveWorkedWith__React,0.010300019265850304,1.035324705641072,Webframe,React
+LanguageHaveWorkedWith__Lua,0.009935479952516207,0.9985000701718372,Language,Lua
+PlatformHaveWorkedWith__NuGet,0.009230907709903775,0.9273643935312936,Platform,NuGet
+DatabaseHaveWorkedWith__PostgreSQL,0.0076550229722741935,0.768439756718764,Database,PostgreSQL
+DatabaseHaveWorkedWith__Snowflake,0.00696138382605324,0.6985670582208892,Database,Snowflake
+LanguageHaveWorkedWith__C#,0.005687104442288714,0.5703306720878931,Language,C#
+WebframeHaveWorkedWith__FastAPI,0.00432286031063771,0.4332217349469092,Webframe,FastAPI
+PlatformHaveWorkedWith__Gradle,0.004047940275152011,0.4056144251387783,Platform,Gradle
+LanguageHaveWorkedWith__Zig,0.003353244106389202,0.33588725187962964,Language,Zig
+LanguageHaveWorkedWith__Perl,0.0032799574308884673,0.32853423771179724,Language,Perl
+DatabaseHaveWorkedWith__BigQuery,0.003109925418233128,0.31147662531976206,Database,BigQuery
+PlatformHaveWorkedWith__Composer,0.0026638026411632447,0.2667353715839482,Platform,Composer
+LanguageHaveWorkedWith__Erlang,0.0018922265528953982,0.18940179432864745,Language,Erlang
+PlatformHaveWorkedWith__Pacman,0.0009017702494958066,0.09021769665331636,Platform,Pacman
+PlatformHaveWorkedWith__MSBuild,-4.883907651918777e-05,-0.004883788391085719,Platform,MSBuild
+PlatformHaveWorkedWith__Vite,-0.00045088510275640537,-0.045078346934401825,Platform,Vite
+DatabaseHaveWorkedWith__Cassandra,-0.0004902350674379581,-0.049011492186123995,Database,Cassandra
+PlatformHaveWorkedWith__Firebase,-0.0008173726580402573,-0.0817038700004824,Platform,Firebase
+WebframeHaveWorkedWith__NestJS,-0.0019265115993570277,-0.1924657067002955,Webframe,NestJS
+WebframeHaveWorkedWith__Symfony,-0.0020021651511853865,-0.200016215553811,Webframe,Symfony
+WebframeHaveWorkedWith__Drupal,-0.0020831600590047257,-0.20809917869695216,Webframe,Drupal
+LanguageHaveWorkedWith__JavaScript,-0.005753797518484461,-0.5737276127642632,Language,JavaScript
+PlatformHaveWorkedWith__Maven (build tool),-0.007136261047935613,-0.7110858399624553,Platform,Maven (build tool)
+DatabaseHaveWorkedWith__Amazon Redshift,-0.008655318260656013,-0.8617968828311784,Database,Amazon Redshift
+WebframeHaveWorkedWith__Next.js,-0.009369881898817817,-0.9326121339164772,Webframe,Next.js
+DatabaseHaveWorkedWith__SQLite,-0.009858327962515972,-0.9809893937576364,Database,SQLite
+PlatformHaveWorkedWith__Make,-0.010013490932494996,-0.996352285620905,Platform,Make
+WebframeHaveWorkedWith__Spring Boot,-0.010333271552912915,-1.028006672011239,Webframe,Spring Boot
+WebframeHaveWorkedWith__Blazor,-0.0105144017704895,-1.0459318672504603,Webframe,Blazor
+PlatformHaveWorkedWith__Digital Ocean,-0.011187542651466723,-1.1125194819124773,Platform,Digital Ocean
+PlatformHaveWorkedWith__Heroku,-0.013020061182706101,-1.2935666856266126,Platform,Heroku
+PlatformHaveWorkedWith__Supabase,-0.013052484939990018,-1.2967670671782838,Platform,Supabase
+PlatformHaveWorkedWith__Vercel,-0.013124260324761937,-1.303851275461343,Platform,Vercel
+LanguageHaveWorkedWith__Java,-0.013263764451627155,-1.3176188351760931,Language,Java
+PlatformHaveWorkedWith__Splunk,-0.014110997345416303,-1.4011903872534148,Platform,Splunk
+WebframeHaveWorkedWith__Node.js,-0.014295400417406482,-1.419370634342365,Webframe,Node.js
+DatabaseHaveWorkedWith__Cloud Firestore,-0.014365313932228979,-1.426262511714238,Database,Cloud Firestore
+DatabaseHaveWorkedWith__Supabase,-0.014548768789368898,-1.4443446839610186,Database,Supabase
+PlatformHaveWorkedWith__Microsoft Azure,-0.015083889127076023,-1.4970697111413411,Platform,Microsoft Azure
+WebframeHaveWorkedWith__jQuery,-0.01576996989747281,-1.5646274997404452,Webframe,jQuery
+LanguageHaveWorkedWith__PowerShell,-0.01582460726566976,-1.5700056025073184,Language,PowerShell
+WebframeHaveWorkedWith__Flask,-0.01677211772104383,-1.663224881226566,Webframe,Flask
+PlatformHaveWorkedWith__Pip,-0.016812331706252077,-1.6671793153343106,Platform,Pip
+WebframeHaveWorkedWith__ASP.NET Core,-0.018057530603117277,-1.7895470332916608,Webframe,ASP.NET Core
+WebframeHaveWorkedWith__Svelte,-0.020370806230048902,-2.0164723089004966,Webframe,Svelte
+PlatformHaveWorkedWith__npm,-0.021886409179695587,-2.164863952674123,Platform,npm
+DatabaseHaveWorkedWith__Microsoft SQL Server,-0.02273097856601462,-2.247457630530658,Database,Microsoft SQL Server
+LanguageHaveWorkedWith__Delphi,-0.023173904584767424,-2.2907451876449714,Language,Delphi
+DatabaseHaveWorkedWith__MariaDB,-0.02432924563461887,-2.403567513997873,Database,MariaDB
+PlatformHaveWorkedWith__Podman,-0.02539269878815033,-2.5073015799623843,Platform,Podman
+WebframeHaveWorkedWith__Astro,-0.02579931101445838,-2.546935244803328,Webframe,Astro
+LanguageHaveWorkedWith__SQL,-0.02635005090294939,-2.6005917580724014,Language,SQL
+PlatformHaveWorkedWith__Bun,-0.027421765230371653,-2.7049201842474613,Platform,Bun
+LanguageHaveWorkedWith__Elixir,-0.028187579782866522,-2.77940164912156,Language,Elixir
+LanguageHaveWorkedWith__R,-0.02959116987734039,-2.9157637972786143,Language,R
+PlatformHaveWorkedWith__Chocolatey,-0.03032306826318284,-2.9867935965776637,Platform,Chocolatey
+PlatformHaveWorkedWith__APT,-0.03215819528471266,-3.1646618977138607,Platform,APT
+WebframeHaveWorkedWith__Angular,-0.03374522760170571,-3.3182208249886935,Webframe,Angular
+LanguageHaveWorkedWith__HTML/CSS,-0.036914763737117266,-3.624172099778089,Language,HTML/CSS
+WebframeHaveWorkedWith__Express,-0.042087436210240615,-4.121405570202652,Webframe,Express
+LanguageHaveWorkedWith__GDScript,-0.042592661433623426,-4.169833619924834,Language,GDScript
+PlatformHaveWorkedWith__Netlify,-0.044755311213090024,-4.376856768141835,Platform,Netlify
+LanguageHaveWorkedWith__C,-0.04574761308119087,-4.47169672908716,Language,C
+LanguageHaveWorkedWith__Assembly,-0.0463376471445628,-4.528045056682018,Language,Assembly
+DatabaseHaveWorkedWith__MongoDB,-0.047170873190745574,-4.607561643974489,Database,MongoDB
+DatabaseHaveWorkedWith__Oracle,-0.04916173392020487,-4.797285783550698,Database,Oracle
+WebframeHaveWorkedWith__Nuxt.js,-0.04940119285581559,-4.820080194892562,Webframe,Nuxt.js
+DatabaseHaveWorkedWith__MySQL,-0.05182398257073002,-5.050402002345633,Database,MySQL
+DatabaseHaveWorkedWith__H2,-0.05298656268658268,-5.160724375261461,Database,H2
+LanguageHaveWorkedWith__PHP,-0.0625136182182764,-6.059973023155585,Language,PHP
+WebframeHaveWorkedWith__WordPress,-0.06574066536411743,-6.362633306934551,Webframe,WordPress
+DatabaseHaveWorkedWith__Valkey,-0.07265730848652005,-7.00805490676113,Database,Valkey
+LanguageHaveWorkedWith__MicroPython,-0.07787075060913723,-7.491601464147468,Language,MicroPython
+LanguageHaveWorkedWith__Visual Basic (.Net),-0.07835371017643959,-7.536268493223441,Language,Visual Basic (.Net)
+DatabaseHaveWorkedWith__Firebase Realtime Database,-0.07858292646473415,-7.557460257719706,Database,Firebase Realtime Database
+DatabaseHaveWorkedWith__Microsoft Access,-0.0811602012029043,-7.795403326091844,Database,Microsoft Access
+LanguageHaveWorkedWith__MATLAB,-0.08891784054483708,-8.5079260123896,Language,MATLAB
+LanguageHaveWorkedWith__Dart,-0.09127849840154284,-8.72365276696392,Language,Dart
+WebframeHaveWorkedWith__Django,-0.1038280289162182,-9.861970456045954,Webframe,Django
+DatabaseHaveWorkedWith__IBM DB2,-0.1044354579919254,-9.916706290266319,Database,IBM DB2
+WebframeHaveWorkedWith__Laravel,-0.11033999458054358,-10.447039168284366,Webframe,Laravel

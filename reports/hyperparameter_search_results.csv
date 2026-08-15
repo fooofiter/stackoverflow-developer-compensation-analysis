@@ -1,0 +1,23 @@
+Model,params,CV log MAE std,Rank within family,Mean fit time per fold (s),CV log MAE
+Ridge,{'model__alpha': 0.1},0.0076103524105457215,3,0.5466948509216308,0.4693262170958749
+Ridge,{'model__alpha': 1.0},0.007599266589826658,2,0.5482260704040527,0.46923560264430086
+Ridge,{'model__alpha': 10.0},0.0075588154667927555,1,0.5259407997131348,0.46856571935699226
+Ridge,{'model__alpha': 100.0},0.007413721363594669,4,0.5325980663299561,0.47000004538814666
+Extra Trees,"{'model__n_estimators': 250, 'model__min_samples_leaf': 10, 'model__max_features': 1.0, 'model__max_depth': None}",0.009791293848134704,5,6.743927097320556,0.4655214217633589
+Extra Trees,"{'model__n_estimators': 400, 'model__min_samples_leaf': 2, 'model__max_features': 1.0, 'model__max_depth': 40}",0.008772080506363812,8,16.94556894302368,0.48219107993542104
+Extra Trees,"{'model__n_estimators': 400, 'model__min_samples_leaf': 2, 'model__max_features': 0.8, 'model__max_depth': 20}",0.011538003573794671,7,11.553027486801147,0.46593169342037183
+Extra Trees,"{'model__n_estimators': 600, 'model__min_samples_leaf': 10, 'model__max_features': 1.0, 'model__max_depth': 40}",0.009797113640376939,6,17.535800552368165,0.4655849753022774
+Extra Trees,"{'model__n_estimators': 600, 'model__min_samples_leaf': 2, 'model__max_features': 0.5, 'model__max_depth': 40}",0.010488720028413298,2,13.131049919128419,0.4536970691677544
+Extra Trees,"{'model__n_estimators': 250, 'model__min_samples_leaf': 10, 'model__max_features': 0.8, 'model__max_depth': 60}",0.010798167158947374,4,6.0598467826843265,0.45679052871266795
+Extra Trees,"{'model__n_estimators': 250, 'model__min_samples_leaf': 2, 'model__max_features': 0.5, 'model__max_depth': None}",0.009611080702567705,3,5.611156940460205,0.45383986642411955
+Extra Trees,"{'model__n_estimators': 250, 'model__min_samples_leaf': 5, 'model__max_features': 0.5, 'model__max_depth': None}",0.010705013923580682,1,4.628911113739013,0.4508473101715227
+Histogram gradient boosting,"{'model__min_samples_leaf': 20, 'model__max_leaf_nodes': 63, 'model__max_iter': 300, 'model__learning_rate': 0.04, 'model__l2_regularization': 1.0}",0.011934387166540284,2,12.321789169311524,0.42724994613962747
+Histogram gradient boosting,"{'model__min_samples_leaf': 20, 'model__max_leaf_nodes': 15, 'model__max_iter': 150, 'model__learning_rate': 0.04, 'model__l2_regularization': 1.0}",0.010236671510577838,10,2.6507686614990233,0.4420702019185467
+Histogram gradient boosting,"{'model__min_samples_leaf': 80, 'model__max_leaf_nodes': 15, 'model__max_iter': 150, 'model__learning_rate': 0.06, 'model__l2_regularization': 1.0}",0.009971476639442704,9,2.645945692062378,0.43581877493644594
+Histogram gradient boosting,"{'model__min_samples_leaf': 20, 'model__max_leaf_nodes': 15, 'model__max_iter': 220, 'model__learning_rate': 0.04, 'model__l2_regularization': 0.0}",0.010013667680979799,8,3.5215264320373536,0.43501196768289113
+Histogram gradient boosting,"{'model__min_samples_leaf': 20, 'model__max_leaf_nodes': 15, 'model__max_iter': 300, 'model__learning_rate': 0.08, 'model__l2_regularization': 1.0}",0.011153867665946308,4,3.3387075901031493,0.4301322489444206
+Histogram gradient boosting,"{'model__min_samples_leaf': 20, 'model__max_leaf_nodes': 15, 'model__max_iter': 300, 'model__learning_rate': 0.04, 'model__l2_regularization': 1.0}",0.010532910815032782,6,4.4439881324768065,0.4329990350308236
+Histogram gradient boosting,"{'model__min_samples_leaf': 20, 'model__max_leaf_nodes': 31, 'model__max_iter': 150, 'model__learning_rate': 0.04, 'model__l2_regularization': 5.0}",0.010268892461006839,7,4.839569520950318,0.433506017409843
+Histogram gradient boosting,"{'model__min_samples_leaf': 40, 'model__max_leaf_nodes': 63, 'model__max_iter': 150, 'model__learning_rate': 0.1, 'model__l2_regularization': 1.0}",0.01253638005875606,1,5.557714414596558,0.42649907344001187
+Histogram gradient boosting,"{'model__min_samples_leaf': 80, 'model__max_leaf_nodes': 31, 'model__max_iter': 300, 'model__learning_rate': 0.06, 'model__l2_regularization': 5.0}",0.012320577336181275,3,5.921035242080689,0.42826046946195495
+Histogram gradient boosting,"{'model__min_samples_leaf': 20, 'model__max_leaf_nodes': 15, 'model__max_iter': 220, 'model__learning_rate': 0.06, 'model__l2_regularization': 1.0}",0.0097766496357926,5,3.4962470531463623,0.43235289731031956

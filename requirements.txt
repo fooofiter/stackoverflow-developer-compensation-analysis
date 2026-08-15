@@ -1,0 +1,8 @@
+numpy==1.26.4
+pandas==2.2.1
+matplotlib==3.8.4
+seaborn==0.12.2
+scikit-learn==1.4.2
+jupyterlab==4.2.0
+nbformat==5.9.2
+nbclient==0.8.0

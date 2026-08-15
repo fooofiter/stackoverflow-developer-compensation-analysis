@@ -1,0 +1,4 @@
+Model,CV log MAE,CV log MAE std,Mean fit time per fold (s),Best parameters
+Ridge,0.46856571935699226,0.0075588154667927555,0.5259407997131348,{'model__alpha': 10.0}
+Extra Trees,0.4508473101715227,0.010705013923580682,4.628911113739013,"{'model__n_estimators': 250, 'model__min_samples_leaf': 5, 'model__max_features': 0.5, 'model__max_depth': None}"
+Histogram gradient boosting,0.42649907344001187,0.01253638005875606,5.557714414596558,"{'model__min_samples_leaf': 40, 'model__max_leaf_nodes': 63, 'model__max_iter': 150, 'model__learning_rate': 0.1, 'model__l2_regularization': 1.0}"

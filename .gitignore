@@ -1,0 +1,37 @@
+# Local Python artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments and editor files
+.venv/
+.vscode/
+
+# Raw survey data remains local because the official CSV exceeds GitHub's
+# normal single-file limit. Use scripts/download_data.py to reproduce it.
+data/raw/*.csv
+
+# Generated temporary files
+*.tmp
+*.log
+*.part
+
+# Internal decision-gate and submission records remain local
+GATE*_*.md
+HYBRID_GATE_PLAN.txt
+submission/
+
+# Superseded development artifacts
+notebooks/01_exploratory_analysis.ipynb
+notebooks/02_modeling_and_evaluation.ipynb
+scripts/build_gate2_notebook.py
+scripts/build_gate3_notebook.py
+scripts/gate2_initial_profile.py
+reports/candidate_feature_missingness.csv
+reports/country_compensation_summary.csv
+reports/role_compensation_summary.csv
+reports/gate2_initial_profile.json
+reports/figures/candidate_feature_missingness.png
+reports/figures/compensation_distribution.png
+reports/figures/country_median_compensation.png
+reports/figures/role_median_compensation.png

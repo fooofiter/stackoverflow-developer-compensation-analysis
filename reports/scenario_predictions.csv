@@ -1,0 +1,4 @@
+Scenario,Country,DevType,WorkExp,ICorPM,Predicted annual compensation (USD)
+Early-career full-stack IC,United States of America,"Developer, full-stack",3,Individual contributor,102239.58873920709
+Experienced back-end IC,United States of America,"Developer, back-end",10,Individual contributor,194938.60503990776
+Experienced engineering manager,United States of America,Engineering manager,15,People manager,214370.83252459354
